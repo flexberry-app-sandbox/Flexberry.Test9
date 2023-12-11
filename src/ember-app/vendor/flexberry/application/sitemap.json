@@ -1,0 +1,36 @@
+﻿{
+  "applicationCaption": "Test",
+  "applicationTitle": "Test",
+  "items": [
+    {
+      "link": null,
+      "menuName": "new-folder1",
+      "caption": "NewFolder1",
+      "title": "NewFolder1",
+      "children": [
+        {
+          "link": "i-i-s-test-ном-l",
+          "menuName": null,
+          "caption": "номL",
+          "title": "Ном",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-тест-l",
+          "menuName": null,
+          "caption": "тестL",
+          "title": "Тест",
+          "children": null
+        },
+        {
+          "link": "i-i-s-test-контр-l",
+          "menuName": null,
+          "caption": "контрL",
+          "title": "Контр",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,128 @@
+﻿{
+  "name": "IISTestтест",
+  "modelName": "i-i-s-test-тест",
+  "className": "тест",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "хЗ",
+      "type": "i-i-s-test-хуй",
+      "flexberryType": "хуй",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ном",
+      "relatedTo": "i-i-s-test-ном",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "тестE",
+      "modelName": "i-i-s-test-тест",
+      "attrs": [
+        {
+          "name": "хЗ",
+          "caption": "ХЗ",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "нома",
+          "lookupValueField": "нома",
+          "relationName": "ном",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "ном.контр",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "когнтра",
+                  "caption": "когнтра",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "контр",
+              "relatedTo": "i-i-s-test-контр",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "нома",
+              "caption": "Нома",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Ном",
+          "name": "ном",
+          "relatedTo": "i-i-s-test-ном",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "тестL",
+      "modelName": "i-i-s-test-тест",
+      "attrs": [
+        {
+          "name": "хЗ",
+          "caption": "ХЗ",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "ном",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "нома",
+              "caption": "Нома",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Нома",
+          "name": "ном",
+          "relatedTo": "i-i-s-test-ном",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

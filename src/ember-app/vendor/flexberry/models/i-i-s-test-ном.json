@@ -1,0 +1,106 @@
+﻿{
+  "name": "IISTestном",
+  "modelName": "i-i-s-test-ном",
+  "className": "ном",
+  "nameSpace": "IIS.Test",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "нома",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "контр",
+      "relatedTo": "i-i-s-test-контр",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "номE",
+      "modelName": "i-i-s-test-ном",
+      "attrs": [
+        {
+          "name": "нома",
+          "caption": "Нома",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "когнтра",
+          "lookupValueField": "когнтра",
+          "relationName": "контр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "когнтра",
+              "caption": "Когнтра",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "standard",
+          "caption": "Контр",
+          "name": "контр",
+          "relatedTo": "i-i-s-test-контр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "номL",
+      "modelName": "i-i-s-test-ном",
+      "attrs": [
+        {
+          "name": "нома",
+          "caption": "Нома",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "контр",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "когнтра",
+              "caption": "Когнтра",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Когнтра",
+          "name": "контр",
+          "relatedTo": "i-i-s-test-контр",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
